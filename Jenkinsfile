@@ -1,5 +1,5 @@
 pipeline {
-      agent 'jenkinsslave'
+      agent {label 'jenkinsslave'}
       stages {
             stage('Init') {
                   steps {
