@@ -1,5 +1,5 @@
 pipeline {
-      agent any
+      agent 'jenkinsslave'
       stages {
             stage('Init') {
                   steps {
@@ -22,7 +22,7 @@ pipeline {
                         echo "Deploying in Production Area"
                   }
             }
-            stage('Deploy Production') {
+            stage('Deploy DR Servers') {
                   steps {
                         echo "Deploying in Production Area"
                   }
